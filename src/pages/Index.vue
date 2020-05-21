@@ -31,7 +31,7 @@
             <q-list>
               <q-item clickable v-close-popup @click="sortDescending()">
                 <q-item-section>
-                  <q-item-label>PubDate - Descending</q-item-label>
+                  <q-item-label>PubDate - Desc</q-item-label>
                 </q-item-section>
               </q-item>
 
