@@ -32,11 +32,11 @@ jobs:
     - name: Quasar build
       run: | 
         quasar build
-    - name: move to docs
+    - name: Moved spa to docs
       run: |
         cp -r dist/spa docs
 
-    - name: Commit
+    - name: Commited docs(spa)
       run: |
         git rm -r .
         git add docs
@@ -44,7 +44,7 @@ jobs:
         git config --local user.name "Github Action"
         git commit -m "lenka-rss-deploy branch" -a
 
-    - name: Push
+    - name: Pushed docs(spa)
       uses: ad-m/github-push-action@master
       with: 
         branch: master
