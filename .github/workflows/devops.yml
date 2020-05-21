@@ -28,8 +28,7 @@ jobs:
       run: npm install
     - name: Install Quasar cli
       run: npm install -g @quasar/cli
-    #- name: Build
-    #  run: npm run build --if-present
+
     - name: Quasar build
       run: | 
         quasar build
